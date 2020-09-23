@@ -263,12 +263,13 @@ h2{
 
 
 .footer{
-  background-color: #8675a9;
+  background-color: #7d0633;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:10px 60px;
+  padding:10px 2.5rem;
   flex-wrap: wrap;
+  color: white;
 }
 .footer-details{
   display: flex;
@@ -370,6 +371,13 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .footer-details{
+    justify-content: center;
+  }
 }
 
 
@@ -409,6 +417,9 @@ h2{
   .experience-mainTitle{
     font-size: 1.4rem;
     padding: 1.1rem 0 1.1rem 1.2rem;
+  }
+  .contact, .footer{
+    padding: 1rem 1.3rem 0.5rem 1.3rem;
   }
 
   
@@ -460,11 +471,63 @@ h2{
   .redes-link.github{
     margin-left: 0;
   }
-  .contact{
-    /*Explicar esta parte la clase que sigue*/
+  .contact, .footer{
     padding: 1rem 1rem 0.5rem 1rem;
   }
 }
+
+.posiciones{
+  height: 250px;
+  background-color: blueviolet;
+  margin:1.5rem 1rem;
+  border: 2px solid black;
+  /* text-align: center; */
+  position: relative;
+}
+.posiciones p{
+  color: white;
+  font-size: 2rem;
+  background-color: tomato;
+  display: inline-block;
+  /* position: relative; */
+}
+.posiciones p span{
+  /* background-color: lime; */
+  position: absolute;
+  right: 0;
+  /* top: 0; */
+  
+}
+.aprende{
+  background-color: red;
+  z-index: 100;
+}
+.responsive{
+ background-color: coral;
+ z-index: 140;
+}
+
+/*
+Vamos a aprender sobre posiciones
+
+position 
+
+
+1)static valor por defecto
+2)relative valores relativo a un elemento pero que mantienen su tamaño original
+3)absolute
+4)fixed
+5)sticky
+
+Desbloqueo internamente dos propiedades que son:
+
+1.) z-index
+
+2.) top(arriba), left(izquierda), 
+right(derecha), bottom(abajo).
+
+
+*/
 
 
 
