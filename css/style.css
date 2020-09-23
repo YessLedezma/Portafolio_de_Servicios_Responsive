@@ -13,6 +13,10 @@ body{
   height: 70px;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 10;
 }
 .header figure{
   margin: 0px 0px 0px 20px;
@@ -477,12 +481,13 @@ h2{
 }
 
 .posiciones{
-  height: 250px;
+  height: 100px;
   background-color: blueviolet;
   margin:1.5rem 1rem;
   border: 2px solid black;
   /* text-align: center; */
   position: relative;
+ 
 }
 .posiciones p{
   color: white;
@@ -492,10 +497,9 @@ h2{
   /* position: relative; */
 }
 .posiciones p span{
-  /* background-color: lime; */
-  position: absolute;
+  background-color: lime;
   right: 0;
-  /* top: 0; */
+
   
 }
 .aprende{
@@ -506,6 +510,7 @@ h2{
  background-color: coral;
  z-index: 140;
 }
+
 
 /*
 Vamos a aprender sobre posiciones
@@ -528,6 +533,24 @@ right(derecha), bottom(abajo).
 
 
 */
+
+.segunda{
+ background-color: brown;
+ padding: 20px;
+ position: sticky;
+ top:70px;
+ z-index: 9;
+}
+
+.tercera{
+  background-color: lime;
+ padding: 20px;
+ position: sticky;
+ top:70px;
+ z-index:10;
+}
+
+
 
 
 
