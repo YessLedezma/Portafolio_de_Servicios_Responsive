@@ -150,13 +150,20 @@ h2{
 .experience-container_image{
   margin: 0px;
   width: 100%;
-  height: 200px;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  /* height: 200px; */
   /* width: auto; */
 }
 .experience-image{
-  /* width: auto; */
-  width: inherit;
-  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .experience-down{
@@ -524,6 +531,22 @@ h2{
   }
 }
 
+.video_youtube{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.video_youtube:hover{
+  z-index: 8;
+}
+
+
+
+/* proporcion 56.25% */
 
 
 
