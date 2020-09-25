@@ -81,7 +81,7 @@ h1{
   height: inherit;
 }
 .main span{
-  color: #005086;
+  color: #28df99;
 }
 h2{
   margin: 0px;
@@ -302,6 +302,27 @@ h2{
   .wrapper.especial{
     margin: 0;
   }
+  .main{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1.5rem;
+  }
+  h1{
+    z-index: 5;
+  }
+  .main figure{
+    width: auto;
+  }
+  .main figure img{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    
+  }
 }
 
 @media screen and (max-width:767px){
@@ -357,10 +378,16 @@ h2{
     font-size: 1.5rem;
     padding: 1.3rem 0 1.3rem 1.5rem;
   }
+  /* .main figure img{
+    content: url("https://i.ibb.co/bLN5hxz/img-main.jpg");
+  } */
   
 }
 
 @media screen and (max-width:572px){
+  h1{
+    font-size: 2rem;
+  }
   .contact{
     justify-content: center;
     padding: 1.7rem 2.5rem 0.5rem 2.5rem;
@@ -390,6 +417,12 @@ h2{
 
 
 @media screen and (max-width:480px){
+  h1{
+    font-size: 1.5rem;;
+  }
+  .main{
+    padding: 2rem 1.2rem;
+  }
   .projects{
     padding: 0px 1.2rem 6px 1.2rem;
   }
@@ -433,6 +466,13 @@ h2{
   
 }
 @media screen and (max-width:320px){
+  .main{
+    padding: 1rem 0.8rem;
+  }
+  h1{
+    padding: 0.5rem;
+    background-color: rgba(66, 63, 63, 0.418);
+  }
   .project{
     box-shadow: 0px 0px 4px black;
     margin-bottom: 0.9rem;
