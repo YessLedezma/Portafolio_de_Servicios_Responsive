@@ -16,7 +16,7 @@
 </head>
 <body>
 <figure class="container_menu-hamburguer">
-  <img class="hamburguer_menu" src="img/hamburguer_menu.png" alt="menu">
+  <img class="hamburguer_menu" id="hamburguer" src="img/hamburguer_menu.png" alt="menu">
 </figure>
 
 
@@ -25,7 +25,7 @@
       <figure>
        <img src="img/logo.png" alt="Logo de git" />
       </figure>
-      <nav class="menu menu_active">
+      <nav class="menu">
        <ul>
           <li><a class="link" href="#proyecto">Proyectos</a></li>
           <li><a class="link" href="#experiencia">Experiencia</a></li>
@@ -184,6 +184,45 @@
     <p>Diseñado por David Torres 🍔🍕</p>
   </div>
   </footer>
+
+  <script>
+
+    const changes = window.matchMedia('screen and (max-width:767px)');
+
+    const menu_profesional = document.querySelector('.menu');
+
+    const button_hamburguer = document.querySelector('#hamburguer');
+
+    changes.addListener(validation);
+
+    function validation(event){
+      if(event.matches){
+        button_hamburguer.addEventListener('click', WatchHiden);
+      }
+      else{
+        button_hamburguer.removeEventListener('click', WatchHiden); 
+      }
+    }
+
+    validation(changes);
+
+    function WatchHiden(){
+      if(menu_profesional.classList.contains('menu_active')){
+        menu_profesional.classList.remove('menu_active');
+      }
+      else{
+        menu_profesional.classList.add('menu_active');
+      }
+    }
+
+    // menu_profesional.classList.add('menu_active');
+
+
+
+
+
+  </script>
+
 
 
 </body>
